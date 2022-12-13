@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMWEB</title>
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/pexels-leon-ardho-1552249 (2).jpg');
+        }
+        .left{
+            position: absolute;
+            display: inline-block;
+            left: 10px;
+            top: 0px;
+            
+            width: fit-content;
+            /* border: 2px solid rgb(0, 128, 113) ; */
+
+        }
+        .mid{
+            width: fit-content;
+            /* border: 2px solid green ; */
+            display: block;
+            margin: 30px auto;
+            
+            
+        }
+        
+        .left img{
+            filter: invert(100%);
+            width: 150px;
+            height: 150px;
+           margin: 0px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: rgb(68, 140, 141);
+        }
+        .navbar li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 10px 60px;
+            font-size: 25px;
+        }
+        .navbar{
+           
+        }
+        .right{
+            position: absolute;
+            display: inline-block;
+            right: 10px;
+            top: 30px;
+            width: fit-content;
+            
+        }
+        .but{
+            background-color: rgb(23, 26, 26);
+            height: 50px;
+            font-size: medium;
+            color: rgb(68, 140, 141);
+            border-color: azure;
+            border-radius: 15%;
+        }
+        .container{
+            border: 2px solid white;
+            padding: 5px;
+            display: block;
+            width: 500px;
+            height: 400px;
+            margin: 40px auto;
+            border-radius: 3%;
+        }
+        .container input{
+            display: block;
+            font-size: 20px;
+            margin: 10px auto;
+            
+        }
+        .container h1{
+            padding: 0px 130px;
+        }
+        #Submitfm{
+            background-color: rgb(42, 54, 55);
+            color: rgb(31, 169, 169);
+            width: 260px;
+            height:40px;
+            font-size: 20px;
+            margin: 10px 120px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+          
+           <img src="img/—Pngtree—gym logo_5149987.png" alt="logo">
+           
+        </div>
+
+        <div class="mid">
+            
+            <ul class="navbar">
+               <li><a href="#">Home</a>
+               </li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Fitness Calculator</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+        <button class="but" >Response Us</button>
+        <button class="but"  >Retrieve Data</button>
+        </div>
+        
+
+    </header>
+    <div class="container">
+        <h1>Register with Us</h1>
+        <form action="noaction.php">
+            <input  type="text" placeholder="Enter your Name">
+            <input type="text" placeholder="Enter your Address">
+            <input type="email" placeholder="Enter your Email">
+            <input type="text" placeholder="Enter your number">
+            <input type="text" placeholder="Enter your report">
+            <input type="text" placeholder="Enter your suggestions">
+            <button id="Submitfm">Submit</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
